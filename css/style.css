@@ -269,6 +269,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #3c4761;
 }
 
+.content-top__menu {
+  margin: 0 auto;
+}
+
+.content-top__menu li {
+  display: inline-block;
+  padding: 7px 15px;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.content-top__menu-link {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #393939;
+  text-transform: uppercase;
+}
+
+.content-top nav {
+  margin-top: 40px;
+}
+
 .content-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +303,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.content-body--wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1100px;
 }
 
 .column {
@@ -437,6 +469,75 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 1440px;
   min-height: 655px;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-stats__image {
+  background: url(../img/skills/4.png) no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  height: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Titillium Web';
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #3c4761;
+}
+
+.block-stats__image--purple {
+  background: url(../img/skills/3.png) no-repeat;
+}
+
+.block-stats__image--green {
+  background: url(../img/skills/2.png) no-repeat;
+}
+
+.block-stats__image--orange {
+  background: url(../img/skills/1.png) no-repeat;
+}
+
+.block-stats__title {
+  font-family: 'Titillium Web';
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #3c4761;
+  margin-top: 30px;
+}
+
+/*------------------Блок Portfolio--------------*/
+.portfolio {
+  min-width: 1440px;
+  min-height: 1423px;
+  background-color: #ffdd99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
