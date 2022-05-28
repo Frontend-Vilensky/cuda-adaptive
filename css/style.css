@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 596px;
 }
 
+/*------------------Настройка контентной части----------------*/
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,11 +177,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-link {
-  background-color: #eb7d4b;
-  -webkit-box-shadow: 0px 4px 0.6px #c86a40;
-          box-shadow: 0px 4px 0.6px #c86a40;
+  background-color: #cd6b3e;
+  -webkit-box-shadow: 0px 4px 0.6px #c2673e;
+          box-shadow: 0px 4px 0.6px #c2673e;
 }
 
+.main-link:hover {
+  background-color: #ec8251;
+  -webkit-box-shadow: 0px 4px 0.6px #d37143;
+          box-shadow: 0px 4px 0.6px #d37143;
+}
+
+.main-link:active {
+  position: relative;
+  top: 1px;
+}
+
+/*--------------Общий стиль кнопок на странице-----------*/
 .btn {
   width: 293px;
   height: 70px;
@@ -467,6 +480,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
 }
 
+.column__link:hover {
+  background-color: #99adbb;
+}
+
 /*---------------Блок Team-------------*/
 .team {
   background-color: #e7f1f8;
@@ -575,6 +592,17 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0px 4px 0.6px #14aa8f;
 }
 
+.portfolio-link:hover {
+  background-color: #05d7b1;
+  -webkit-box-shadow: 0px 4px 0.6px #08b595;
+          box-shadow: 0px 4px 0.6px #08b595;
+}
+
+.portfolio-link:active {
+  position: relative;
+  top: 1px;
+}
+
 /*---------------------Блок people----------------*/
 .people {
   min-width: 1440px;
@@ -657,43 +685,69 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #3c5499;
 }
 
-form ::-webkit-input-placeholder {
-  font-family: 'Titillium Web';
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-form :-ms-input-placeholder {
-  font-family: 'Titillium Web';
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-form ::-ms-input-placeholder {
-  font-family: 'Titillium Web';
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-form ::placeholder {
-  font-family: 'Titillium Web';
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
+.container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100px;
 }
 
 .form {
   margin: 0 auto;
 }
 
-.form__input {
+.form ::-webkit-input-placeholder {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.form :-ms-input-placeholder {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.form ::-ms-input-placeholder {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.form ::placeholder {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.form textarea {
+  width: 860px;
+  height: 200px;
+  background-color: #273a71;
+  resize: vertical;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.form textarea:focus {
+  border: solid 0.5px;
+}
+
+.form__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,7 +756,7 @@ form ::placeholder {
           justify-content: space-between;
 }
 
-.form__input input {
+.form__group input {
   width: 414px;
   height: 56px;
   background-color: #273a71;
@@ -713,17 +767,33 @@ form ::placeholder {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+  border-radius: 4px;
 }
 
-textarea {
-  width: 860px;
-  height: 200px;
-  background-color: #273a71;
-  resize: vertical;
-  padding-left: 15px;
-  padding-top: 15px;
+.form__group input:focus {
+  border: solid 0.5px;
 }
 
+.form__button {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #30bae7;
+  -webkit-box-shadow: 0px 4px 0.6px #2aa1c9;
+          box-shadow: 0px 4px 0.6px #2aa1c9;
+}
+
+.form__button:hover {
+  background-color: #3bcafa;
+  -webkit-box-shadow: 0px 4px 0.6px #30b3df;
+          box-shadow: 0px 4px 0.6px #30b3df;
+}
+
+.form__button:active {
+  position: relative;
+  top: 1px;
+}
+
+/*---------------------Блок Contacts (Footer)----------------*/
 .contacts {
   min-width: 1440px;
   min-height: 112px;

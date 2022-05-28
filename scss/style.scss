@@ -35,6 +35,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    min-width: 1440px;
    height: 596px;
 }
+
+/*------------------Настройка контентной части----------------*/
+
 .container {
    display: flex;
    flex-direction: column;
@@ -106,9 +109,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    
 }
 .main-link {
-   background-color: #eb7d4b;
-   box-shadow: 0px 4px 0.6px #c86a40;
+   background-color: #cd6b3e;
+   box-shadow: 0px 4px 0.6px #c2673e;
+   &:hover{
+      background-color: #ec8251;
+      box-shadow: 0px 4px 0.6px #d37143;
+   }
+   &:active{
+      position: relative;
+      top: 1px;
+      
+      }
 }
+
+/*--------------Общий стиль кнопок на странице-----------*/
+
 .btn {
    width: 293px;
    height: 70px;
@@ -338,6 +353,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
          &:first-child{
             margin-left: 0px;
          }
+      &:hover{
+         background-color: #99adbb;
+      }
       }
 }
 
@@ -431,6 +449,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .portfolio-link {
    background-color: #17c2a4;
    box-shadow: 0px 4px 0.6px #14aa8f;
+   &:hover{
+      background-color: #05d7b1;
+      box-shadow: 0px 4px 0.6px #08b595;
+      }
+   &:active{
+      position: relative;
+      top: 1px;
+   }
 }
 
 
@@ -516,44 +542,83 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    max-width: 100px;
 }
 
-form{
+.form {
+   margin: 0 auto;
+
    ::placeholder{
       font-family: 'Titillium Web';
       font-size: 18px;
       line-height: 18px;
       font-weight: 400;
       color: #ffffff;
+}
 
+      textarea{
+         width: 860px;
+         height: 200px;
+         background-color: #273a71;
+         resize: vertical;
+         padding-top: 15px;
+         padding-left: 15px;
+         font-family: 'Titillium Web';
+         font-size: 18px;
+         line-height: 18px;
+         font-weight: 400;
+         color: #ffffff;
+         border-radius: 4px;
+         &:focus{
+            border: solid 0.5px;
+         }
+      }
+
+   &__group {
+      display: flex;
+      justify-content: space-between;
+      input{
+         width: 414px;
+         height: 56px;
+         background-color: #273a71;
+         margin-bottom: 20px;
+         padding-left: 15px;
+         font-family: 'Titillium Web';
+         font-size: 18px;
+         line-height: 18px;
+         font-weight: 400;
+         color: #ffffff;
+         border-radius: 4px;
+         &:focus{
+            border: solid 0.5px;
+         }
+      }
+   }
+
+   &__button {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background-color: #30bae7;
+      box-shadow: 0px 4px 0.6px #2aa1c9;
+      &:hover{
+      background-color: #3bcafa;
+      box-shadow: 0px 4px 0.6px #30b3df;
+      }
+      &:active{
+         position: relative;
+         top: 1px;
+      }
    }
 }
 
 
 
-		&__input {
-         display: flex;
-         justify-content: space-between;
-         input{
-            width: 414px;
-            height: 56px;
-            background-color: #273a71;
-            margin-bottom: 20px;
-            padding-left: 15px;
-            font-family: 'Titillium Web';
-            font-size: 18px;
-            line-height: 18px;
-            font-weight: 400;
-            color: #ffffff;
-         }
-		}
 
-textarea{
-      width: 860px;
-      height: 200px;
-      background-color: #273a71;
-      resize: vertical;
-      padding-left: 15px;
-      padding-top: 15px;
-}
+
+
+
+/*---------------------Блок Contacts (Footer)----------------*/
+
+
+
+
 
 
 .contacts {
