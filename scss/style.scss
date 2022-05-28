@@ -499,3 +499,85 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       color: #ffdd99;
    }
 }
+
+
+/*---------------Блок Get (Форма)--------------*/
+
+.get {
+   display: flex;
+   min-width: 1440px;
+   min-height: 819px;
+   background-color: #3c5499;
+}
+
+.container-form {
+   display: flex;
+   
+   max-width: 100px;
+}
+
+form{
+   ::placeholder{
+      font-family: 'Titillium Web';
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #ffffff;
+
+   }
+}
+
+
+
+		&__input {
+         display: flex;
+         justify-content: space-between;
+         input{
+            width: 414px;
+            height: 56px;
+            background-color: #273a71;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            font-family: 'Titillium Web';
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #ffffff;
+         }
+		}
+
+textarea{
+      width: 860px;
+      height: 200px;
+      background-color: #273a71;
+      resize: vertical;
+      padding-left: 15px;
+      padding-top: 15px;
+}
+
+
+.contacts {
+   min-width: 1440px;
+   min-height: 112px;
+   background-color: #344b8e;
+   display: flex;
+}
+
+.contacts-body {
+   padding-top: 45px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+		&__link {
+         font-family: 'Titillium Web';
+         font-size: 24px;
+         line-height: 29px;
+         font-weight: 600;
+         letter-spacing: 0.02em;
+         color: #ffffff;
+         &:hover{
+            color: #30bae7;
+         }
+		}
+}

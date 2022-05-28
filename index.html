@@ -16,14 +16,14 @@
    <div class="main">
       <div class="container">
          <div class="header">
-            <div class="header__logo"><img src="img/logo.svg" alt="Logotype"></div>
+            <a class="header__logo" href="#"><img src="img/logo.svg" alt="Logotype"></a>
             <nav class="header__menu">
                <ul>
                   <li><a href="#" class="header__menu-link">home</a></li>
-                  <li><a href="#" class="header__menu-link">about</a></li>
-                  <li><a href="#" class="header__menu-link">work</a></li>
-                  <li><a href="#" class="header__menu-link">blog</a></li>
-                  <li><a href="#" class="header__menu-link">contact</a></li>
+                  <li><a href="#about" class="header__menu-link">about</a></li>
+                  <li><a href="#work" class="header__menu-link">work</a></li>
+                  <li><a href="#blog" class="header__menu-link">blog</a></li>
+                  <li><a href="#contact" class="header__menu-link">contact</a></li>
                </ul>
             </nav>
          </div>
@@ -32,7 +32,7 @@
          <a href="" class="main-link btn">work with us!</a>
       </div>
    </div>
-   <div class="services">
+   <div class="services" id="about">
       <div class="container">
          <div class="content-top">
             <div class="content-top__title">services we provide</div>
@@ -160,7 +160,7 @@
          </div>
       </div>
    </div>
-   <div class="portfolio">
+   <div class="portfolio" id="work">
       <div class="container">
          <div class="content-top">
             <div class="content-top__title content-top__title--dark">our portfolio</div>
@@ -169,10 +169,10 @@
                consectetur, adipisci velit, sed quia non numquam</div>
             <nav class="content-top__menu">
                <ul>
-                  <li><a href="" class="content-top__menu-link">all</a></li>
-                  <li><a href="" class="content-top__menu-link">web</a></li>
-                  <li><a href="" class="content-top__menu-link">apps</a></li>
-                  <li><a href="" class="content-top__menu-link">icons</a></li>
+                  <li><a href="#work" class="content-top__menu-link">all</a></li>
+                  <li><a href="#work" class="content-top__menu-link">web</a></li>
+                  <li><a href="#work" class="content-top__menu-link">apps</a></li>
+                  <li><a href="#work" class="content-top__menu-link">icons</a></li>
                </ul>
             </nav>
          </div>
@@ -194,10 +194,11 @@
                <p>Blog / Magazine Flat UI Kit</p>
             </div>
          </div>
-         <a href="#" class="portfolio-link btn">load more projects</a>
+         <a href="https://github.com/Frontend-Vilensky?tab=repositories" class="portfolio-link btn">load more
+            projects</a>
       </div>
    </div>
-   <div class="people">
+   <div class="people" id="blog">
       <div class="container">
          <div class="content-top">
             <div class="content-top__title">what people say about us</div>
@@ -244,11 +245,39 @@
             </div>
          </div>
       </div>
-
    </div>
-
-
-
+   <div class="get">
+      <div class="container">
+         <div class="content-top">
+            <div class="content-top__title">get in touch</div>
+            <div class="content-top__subtitle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America.
+               Tel: (202) 456-1111</div>
+         </div>
+         <div class="container-form">
+            <form action="">
+               <div class="form__input">
+                  <input id="login" type="text" placeholder="Your Name">
+                  <input id="email" type="email" placeholder="Your Email">
+               </div>
+               <textarea name="text" id="text" cols="30" rows="10" placeholder="Your Text"></textarea>
+            </form>
+         </div>
+         <button type="submit" class="form-link btn">send message</button>
+      </div>
+   </div>
+   <div class="contacts" id="contact">
+      <div class="container">
+         <div class="contacts-body">
+            <a href="https://ru-ru.facebook.com/" class="contacts-body__link">Facebook</a>
+            <a href="https://twitter.com/?lang=ru" class="contacts-body__link">Twitter</a>
+            <a href="https://ru.wikipedia.org/wiki/Google%2B" class="contacts-body__link">Google+</a>
+            <a href="https://ru.linkedin.com/" class="contacts-body__link">LinkedIn</a>
+            <a href="https://www.behance.net/" class="contacts-body__link">Behance</a>
+            <a href="https://dribbble.com/" class="contacts-body__link">Dribbble</a>
+            <a href="https://github.com/Frontend-Vilensky?tab=repositories" class="contacts-body__link">GitHub</a>
+         </div>
+      </div>
+   </div>
 </body>
 
 </html>
