@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .container {
    display: flex;
    flex-direction: column;
-   min-width: 1100px;
+   min-width: 1150px;
    margin: 0 auto;
    padding: 0px;
    @media (max-width:1100px){
@@ -107,23 +107,23 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .main-link {
    background-color: #eb7d4b;
+   box-shadow: 0px 4px 0.6px #c86a40;
+}
+.btn {
+   width: 293px;
+   height: 70px;
    font-family: 'Titillium Web';
    font-size: 18px;
    line-height: 26px;
    font-weight: 600;
    letter-spacing: 0.02em;
    color: #ffffff;
+   text-transform: uppercase;
+   margin: 0 auto;
    display: flex;
    justify-content: center;
    align-items: center;
-   text-transform: uppercase;
    border-radius: 4px;
-   margin: 0 auto;
-   box-shadow: 0px 4px 0.6px #c86a40;
-}
-.btn {
-   width: 293px;
-   height: 70px;
 }
 
 
@@ -182,15 +182,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
          }
 		}
 
-
+/*---------------Меню блока Portfolio------------*/
       &__menu{
          margin: 0 auto;
          li{
             display: inline-block;
-            padding: 7px 15px;
+            padding-top: 9px;
             background-color: rgba(0,0,0,0.07);
             border-radius: 4px;
             margin-right: 5px;
+            width: 84px;
+            height: 38px;
+            &:hover{
+               background-color:rgba(255, 255, 255, 0.822) ;
+            }
          }
 
       }
@@ -204,6 +209,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
          letter-spacing: 0.02em;
          color: #393939;
          text-transform: uppercase;
+         display: flex;
+         justify-content: center;
       }
       
       nav{
@@ -406,9 +413,89 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    display: flex;
 }
 
+.block {
+   p{
+      font-family: 'Titillium Web';
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: #393939;
+      text-align: center;
+      margin-bottom: 60px;
+      margin-top: 30px;
+   }
+}
+
+.portfolio-link {
+   background-color: #17c2a4;
+   box-shadow: 0px 4px 0.6px #14aa8f;
+}
 
 
+/*---------------------Блок people----------------*/
+
+.people {
+   min-width: 1440px;
+   min-height: 894px;
+   background-color: #d74680;
+   display: flex;
+   
+   
+}
+
+.block2 {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 100px;
+   
+
+   
+
+   &__image {
+      width: 96px;
+      height: 96px;
+      background-color: #787878;
+      border-radius: 50%;
+   }
+}
+.block-info {
+   display: flex;
+   flex-direction: column;
+   margin-left: 45px;
+   width: 370px;
 
 
+   &__text {
+      font-family: 'Titillium Web';
+      font-size: 21px;
+      line-height: 31px;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      margin-bottom: 25px;
+      flex: 1 1 auto;
+      
+   }
 
+   &__title {
+      font-family: 'Titillium Web';
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+   }
 
+   &__subtitle {
+      font-family: 'Titillium Web';
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #ffdd99;
+   }
+}

@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 1100px;
+  min-width: 1150px;
   margin: 0 auto;
   padding: 0px;
 }
@@ -177,12 +177,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-link {
   background-color: #eb7d4b;
+  -webkit-box-shadow: 0px 4px 0.6px #c86a40;
+          box-shadow: 0px 4px 0.6px #c86a40;
+}
+
+.btn {
+  width: 293px;
+  height: 70px;
   font-family: 'Titillium Web';
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,16 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-transform: uppercase;
   border-radius: 4px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 0.6px #c86a40;
-          box-shadow: 0px 4px 0.6px #c86a40;
-}
-
-.btn {
-  width: 293px;
-  height: 70px;
 }
 
 /*-------------------------Блок Services------------------*/
@@ -225,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   margin-top: 120px;
   margin-bottom: 80px;
+  /*---------------Меню блока Portfolio------------*/
 }
 
 .content-top__title {
@@ -275,10 +276,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-top__menu li {
   display: inline-block;
-  padding: 7px 15px;
+  padding-top: 9px;
   background-color: rgba(0, 0, 0, 0.07);
   border-radius: 4px;
   margin-right: 5px;
+  width: 84px;
+  height: 38px;
+}
+
+.content-top__menu li:hover {
+  background-color: rgba(255, 255, 255, 0.822);
 }
 
 .content-top__menu-link {
@@ -289,6 +296,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em;
   color: #393939;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content-top nav {
@@ -541,4 +554,95 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.block p {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #393939;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.portfolio-link {
+  background-color: #17c2a4;
+  -webkit-box-shadow: 0px 4px 0.6px #14aa8f;
+          box-shadow: 0px 4px 0.6px #14aa8f;
+}
+
+/*---------------------Блок people----------------*/
+.people {
+  min-width: 1440px;
+  min-height: 894px;
+  background-color: #d74680;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.block2__image {
+  width: 96px;
+  height: 96px;
+  background-color: #787878;
+  border-radius: 50%;
+}
+
+.block-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 45px;
+  width: 370px;
+}
+
+.block-info__text {
+  font-family: 'Titillium Web';
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.block-info__title {
+  font-family: 'Titillium Web';
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.block-info__subtitle {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffdd99;
 }
